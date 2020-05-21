@@ -1,113 +1,298 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
-body{
+
+body {
     margin: 0px;
     padding: 0px;
+    background-color: black;
+    .content-wrapper {
+        font-family: "Open Sans", sans-serif;
+        background-image: url("../images/Serie-img.png");
+        min-width: 100%;
+        max-height: 843px;
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: cover;        
 
-.content-wrapper {
-    
-    font-family: "Open Sans", sans-serif;
-    background-image: url("../images/Serie-img.png");
-    min-width: 100%;
-    min-height: 843px;
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: cover;
-    .header {
-        .nav {
-            display: flex;
-            height: 65px;
-            background-color: rgba(0, 0, 0, 0.801218);
-            align-items: center;
-            justify-content: flex-start;
-            position: fixed;
-            width: 100%;
+        .header {
+            //ahre que ponia acaaa tambien!!!!
+            .nav {
+                display: flex;
+                background-color: rgba(0, 0, 0, 0.801218);
+                align-items: center;
+                justify-content: flex-start;
+                position: fixed;
+                width: 100%;
+                padding: 13px;
 
-            .logo {
-                background-image: url("../images/Logo.png");
-                min-width: 148.69px;
-                min-height: 40px;
-                background-position: center;
-                background-size: cover;
-                margin-left: 70px;
+                .menu-icon {
+                    display: hidden;
+                }
+                .logo {
+                    background-image: url("../images/Logo.png");
+                    min-width: 148.69px;
+                    min-height: 40px;
+                    background-position: center;
+                    background-size: cover;
+
+                }
+                .links-wrapper {
+                    font-family: "Open Sans", sans-serif;
+                    font-size: 0.9rem;
+                    max-width: 100%;
+                    margin-left: 50px;
+
+                    .link {
+                        text-decoration: none;
+                        color: #ffffff;
+                        margin-left: 20px;
+                        font-weight: bold;
+                    }
+                }
             }
-            .links-wrapper {
-                font-family: "Open Sans", sans-serif;
-                font-size: 0.9rem;
-                max-width: 100%;
-                margin-left: 50px;
+        }
+        .middle-content {
+            .middle-content-wrapper {
+                color: white;
+                max-width: 530px;
+                padding-left: 70px;
+                padding-top: 150px;
 
-                .link {
-                    text-decoration: none;
-                    color: #ffffff;
-                    margin-left: 20px;
+                .courflix-title {
+                    font-size: 0.9rem;
                     font-weight: bold;
+                }
+
+                .title-wrapper {
+                    display: flex;
+                    flex-direction: column;
+
+                    .content-title {
+                        font-size: 4.5rem;
+                        font-weight: bolder;
+                        letter-spacing: 5px;
+                    }
+                }
+                .links-container {
+                    display: flex;
+                    .button {
+                        text-decoration: none;
+                        color: white;
+                        background: rgba(157, 151, 151, 0.541521);
+                        border-radius: 9px;
+                        padding: 14px 40px;
+                        font-size: 0.8rem;
+
+                        &:nth-child(2) {
+                            margin-left: 10px;
+                        }
+
+                        &:hover {
+                            transition: 1s;
+                            background-color: rgba(112, 110, 110, 0.692);
+                        }
+                    }
+                }
+                .description-wrapper {
+                    margin-top: 10px;
+                    .watch {
+                        text-decoration: none;
+                        color: white;
+                    }
+                    .description {
+                        // width: 35%;
+                        font-weight: lighter;
+                        font-size: 0.9rem;
+                    }
                 }
             }
         }
     }
-    .middle-content {
-        //ahre que ponia acáaaaa 
 
-        .middle-content-wrapper {
-            color: white;
-            min-height: 200px;
-            max-width: 530px;
-            padding-left: 70px;
-            padding-top: 150px;
+    .wrap-content {
+        max-width: 100%;
+        margin: 0 70px;
 
-
-
-            .courflix-title {
-                font-size: 0.9rem;
-                font-weight: bold;
+        .series-wrapper {
+            display: flex;
+            flex-direction: column;
+            .wrap-title {
+                text-decoration: none;
+                color: white;
+                margin-bottom: 10px;
+                // margin-top: 30px;
             }
-
-            .title-wrapper {
+            .movies-links {
                 display: flex;
-                flex-direction: column;
+                overflow-x: auto;
+                min-width: 100%;
+                text-decoration: none;
 
-                .content-title {
-                    font-size: 4.5rem;
-                    font-weight: bolder;
-
-                    &:first-child {
-                        letter-spacing: 5px;
-                    }
-                    &:nth-child(2) {
-                        margin-top: -40px;
-                    }
+                &::-webkit-scrollbar {
+                    width: 5px;
+                    height: 8px;
                 }
-            }
-            .links-container {
-                display: flex;
-                justify-content: flex-start;
-                align-items: flex-start;
-                .button {
-                    text-decoration: none;
-                    color: white;
-                    background: rgba(157, 151, 151, 0.541521);
-                    border-radius: 9px;
-                    padding: 14px 40px;
-                    font-size: 0.8rem;
+                &::-webkit-scrollbar-thumb {
+                    background: rgba(128, 128, 128, 0.171);
+                }
+
+                &::-webkit-scrollbar-track {
+                    background: rgb(0, 0, 0);
+                }
+                .movies {
+                    background-image: url("../images/series/series-1.png");
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    min-width: 341px;
+                    min-height: 192px;
+                    margin-right: 16px;
 
                     &:nth-child(2) {
-                        margin-left: 10px;
+                        background-image: url("../images/series/series-2.png");
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        min-width: 341px;
+                        min-height: 192px;
+                        margin-right: 16px;
                     }
-                }
-            }
-            .description-wrapper {
-                margin-top: 10px;
-                .watch {
-                    text-decoration: none;
-                    color: white;
-                }
-                .description {
-                    // width: 35%;
-                    font-weight: lighter;
-                    font-size: 0.9rem;
+
+                    &:nth-child(3) {
+                        background-image: url("../images/series/series-3.png");
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        min-width: 341px;
+                        min-height: 192px;
+                        margin-right: 16px;
+                    }
+
+                    &:nth-child(4) {
+                        background-image: url("../images/series/series-4.png");
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        min-width: 341px;
+                        min-height: 192px;
+                        margin-right: 16px;
+                    }
+
+                    &:nth-child(5) {
+                        background-image: url("../images/series/series-5.png");
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        min-width: 341px;
+                        min-height: 192px;
+                        margin-right: 16px;
+                    }
+
+                    &:nth-child(6) {
+                        background-image: url("../images/series/series-6.png");
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        min-width: 341px;
+                        min-height: 192px;
+                        margin-right: 16px;
+                    }
+
+                    &:nth-child(7) {
+                        background-image: url("../images/series/series-7.png");
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        min-width: 341px;
+                        min-height: 192px;
+                        margin-right: 16px;
+                    }
                 }
             }
         }
     }
 }
+
+@media only screen and (max-width: 320px) {
+    body {
+        .content-wrapper {
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 227px;       //Esto es lo que mide la foto.
+            height: 344px;
+
+            .header {
+                .nav {
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-start;
+                    padding: 13px;
+                    .menu-icon {
+                        background-image: url("../images/menu-icon.png");
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                        height: 40px;
+                        width: 40px;
+                        margin-right: 13px;
+                    }
+
+                    .logo{
+                    }
+                    .links-wrapper {
+                        display: none;
+                    }
+                }
+            }
+
+            .middle-content{
+                padding: 0;
+                margin: 0;
+                .middle-content-wrapper{
+                    width: 227px;
+                    height: 100px;
+                    display: flex;
+                    flex-direction: column;
+                    padding-left: 13px;
+                    .courflix-title{
+                        display: none;
+                    }
+
+                    .title-wrapper{
+                        .content-title{
+                            font-size: 1rem;
+                        }
+                    }
+
+                    .links-container{
+                        display: flex;
+                        margin-top: 30px;
+                        .button{
+                        padding: 7px 15px;
+                        font-size: 0.7rem;
+                        border-radius: 3px;
+
+                        &:first-child{
+                            background-color: #ED0A1D;
+
+                        }
+                        }
+                    }
+
+                    .description-wrapper {
+                        .watch {
+                           display:none;
+                        }
+                        .description {
+                            display: none;
+                        }
+                    }
+                }
+
+            }
+            .wrap-content {
+                margin: 0 13px;
+            }
+        }
+    }
 }

@@ -2,13 +2,14 @@
 body {
   margin: 0px;
   padding: 0px;
+  background-color: black;
 }
 
 body .content-wrapper {
   font-family: "Open Sans", sans-serif;
   background-image: url("../images/Serie-img.png");
   min-width: 100%;
-  min-height: 843px;
+  max-height: 843px;
   background-repeat: no-repeat;
   background-position: right;
   background-size: cover;
@@ -18,7 +19,6 @@ body .content-wrapper .header .nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 65px;
   background-color: rgba(0, 0, 0, 0.801218);
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -28,6 +28,11 @@ body .content-wrapper .header .nav {
           justify-content: flex-start;
   position: fixed;
   width: 100%;
+  padding: 13px;
+}
+
+body .content-wrapper .header .nav .menu-icon {
+  display: hidden;
 }
 
 body .content-wrapper .header .nav .logo {
@@ -36,7 +41,6 @@ body .content-wrapper .header .nav .logo {
   min-height: 40px;
   background-position: center;
   background-size: cover;
-  margin-left: 70px;
 }
 
 body .content-wrapper .header .nav .links-wrapper {
@@ -55,7 +59,6 @@ body .content-wrapper .header .nav .links-wrapper .link {
 
 body .content-wrapper .middle-content .middle-content-wrapper {
   color: white;
-  min-height: 200px;
   max-width: 530px;
   padding-left: 70px;
   padding-top: 150px;
@@ -79,26 +82,13 @@ body .content-wrapper .middle-content .middle-content-wrapper .title-wrapper {
 body .content-wrapper .middle-content .middle-content-wrapper .title-wrapper .content-title {
   font-size: 4.5rem;
   font-weight: bolder;
-}
-
-body .content-wrapper .middle-content .middle-content-wrapper .title-wrapper .content-title:first-child {
   letter-spacing: 5px;
-}
-
-body .content-wrapper .middle-content .middle-content-wrapper .title-wrapper .content-title:nth-child(2) {
-  margin-top: -40px;
 }
 
 body .content-wrapper .middle-content .middle-content-wrapper .links-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
 }
 
 body .content-wrapper .middle-content .middle-content-wrapper .links-container .button {
@@ -114,6 +104,12 @@ body .content-wrapper .middle-content .middle-content-wrapper .links-container .
   margin-left: 10px;
 }
 
+body .content-wrapper .middle-content .middle-content-wrapper .links-container .button:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  background-color: rgba(112, 110, 110, 0.692);
+}
+
 body .content-wrapper .middle-content .middle-content-wrapper .description-wrapper {
   margin-top: 10px;
 }
@@ -126,5 +122,195 @@ body .content-wrapper .middle-content .middle-content-wrapper .description-wrapp
 body .content-wrapper .middle-content .middle-content-wrapper .description-wrapper .description {
   font-weight: lighter;
   font-size: 0.9rem;
+}
+
+body .wrap-content {
+  max-width: 100%;
+  margin: 0 70px;
+}
+
+body .wrap-content .series-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .wrap-content .series-wrapper .wrap-title {
+  text-decoration: none;
+  color: white;
+  margin-bottom: 10px;
+}
+
+body .wrap-content .series-wrapper .movies-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: auto;
+  min-width: 100%;
+  text-decoration: none;
+}
+
+body .wrap-content .series-wrapper .movies-links::-webkit-scrollbar {
+  width: 5px;
+  height: 8px;
+}
+
+body .wrap-content .series-wrapper .movies-links::-webkit-scrollbar-thumb {
+  background: rgba(128, 128, 128, 0.171);
+}
+
+body .wrap-content .series-wrapper .movies-links::-webkit-scrollbar-track {
+  background: black;
+}
+
+body .wrap-content .series-wrapper .movies-links .movies {
+  background-image: url("../images/series/series-1.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-width: 341px;
+  min-height: 192px;
+  margin-right: 16px;
+}
+
+body .wrap-content .series-wrapper .movies-links .movies:nth-child(2) {
+  background-image: url("../images/series/series-2.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-width: 341px;
+  min-height: 192px;
+  margin-right: 16px;
+}
+
+body .wrap-content .series-wrapper .movies-links .movies:nth-child(3) {
+  background-image: url("../images/series/series-3.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-width: 341px;
+  min-height: 192px;
+  margin-right: 16px;
+}
+
+body .wrap-content .series-wrapper .movies-links .movies:nth-child(4) {
+  background-image: url("../images/series/series-4.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-width: 341px;
+  min-height: 192px;
+  margin-right: 16px;
+}
+
+body .wrap-content .series-wrapper .movies-links .movies:nth-child(5) {
+  background-image: url("../images/series/series-5.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-width: 341px;
+  min-height: 192px;
+  margin-right: 16px;
+}
+
+body .wrap-content .series-wrapper .movies-links .movies:nth-child(6) {
+  background-image: url("../images/series/series-6.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-width: 341px;
+  min-height: 192px;
+  margin-right: 16px;
+}
+
+body .wrap-content .series-wrapper .movies-links .movies:nth-child(7) {
+  background-image: url("../images/series/series-7.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-width: 341px;
+  min-height: 192px;
+  margin-right: 16px;
+}
+
+@media only screen and (max-width: 320px) {
+  body .content-wrapper {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 227px;
+    height: 344px;
+  }
+  body .content-wrapper .header .nav {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 13px;
+  }
+  body .content-wrapper .header .nav .menu-icon {
+    background-image: url("../images/menu-icon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 40px;
+    width: 40px;
+    margin-right: 13px;
+  }
+  body .content-wrapper .header .nav .links-wrapper {
+    display: none;
+  }
+  body .content-wrapper .middle-content {
+    padding: 0;
+    margin: 0;
+  }
+  body .content-wrapper .middle-content .middle-content-wrapper {
+    width: 227px;
+    height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 13px;
+  }
+  body .content-wrapper .middle-content .middle-content-wrapper .courflix-title {
+    display: none;
+  }
+  body .content-wrapper .middle-content .middle-content-wrapper .title-wrapper .content-title {
+    font-size: 1rem;
+  }
+  body .content-wrapper .middle-content .middle-content-wrapper .links-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 30px;
+  }
+  body .content-wrapper .middle-content .middle-content-wrapper .links-container .button {
+    padding: 7px 15px;
+    font-size: 0.7rem;
+    border-radius: 3px;
+  }
+  body .content-wrapper .middle-content .middle-content-wrapper .links-container .button:first-child {
+    background-color: #ED0A1D;
+  }
+  body .content-wrapper .middle-content .middle-content-wrapper .description-wrapper .watch {
+    display: none;
+  }
+  body .content-wrapper .middle-content .middle-content-wrapper .description-wrapper .description {
+    display: none;
+  }
+  body .content-wrapper .wrap-content {
+    margin: 0 13px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
