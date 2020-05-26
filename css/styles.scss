@@ -11,18 +11,17 @@ body {
         max-height: 843px;
         background-repeat: no-repeat;
         background-position: right;
-        background-size: cover;        
+        background-size: cover;
 
         .header {
-            //ahre que ponia acaaa tambien!!!!
             .nav {
                 display: flex;
                 background-color: rgba(0, 0, 0, 0.801218);
                 align-items: center;
-                justify-content: flex-start;
                 position: fixed;
-                width: 100%;
+                width: 100vw;
                 padding: 13px;
+                padding-left: 70px;
 
                 .menu-icon {
                     display: hidden;
@@ -33,7 +32,6 @@ body {
                     min-height: 40px;
                     background-position: center;
                     background-size: cover;
-
                 }
                 .links-wrapper {
                     font-family: "Open Sans", sans-serif;
@@ -53,6 +51,7 @@ body {
         .middle-content {
             .middle-content-wrapper {
                 color: white;
+                text-shadow: 0px 0px 0px rgba(0, 0, 0, 1);
                 max-width: 530px;
                 padding-left: 70px;
                 padding-top: 150px;
@@ -65,11 +64,16 @@ body {
                 .title-wrapper {
                     display: flex;
                     flex-direction: column;
-
+                    line-height: 80px;
+                    margin-bottom: 10px;
                     .content-title {
                         font-size: 4.5rem;
                         font-weight: bolder;
                         letter-spacing: 5px;
+                    }
+
+                    .title-info {
+                        display: none;
                     }
                 }
                 .links-container {
@@ -99,7 +103,6 @@ body {
                         color: white;
                     }
                     .description {
-                        // width: 35%;
                         font-weight: lighter;
                         font-size: 0.9rem;
                     }
@@ -118,8 +121,8 @@ body {
             .wrap-title {
                 text-decoration: none;
                 color: white;
-                margin-bottom: 10px;
-                // margin-top: 30px;
+                margin-top: 15px;
+                margin: 5px;
             }
             .movies-links {
                 display: flex;
@@ -212,21 +215,23 @@ body {
     }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 500px) {
     body {
         .content-wrapper {
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
-            width: 227px;       //Esto es lo que mide la foto.
+            width: 227px; //Esto es lo que mide la foto.
             height: 344px;
+            background-blend-mode: multiply;
+            background-color: rgba(0, 0, 0, 0.274);
 
             .header {
                 .nav {
-                    width: 100%;
-                    display: flex;
-                    justify-content: flex-start;
+                    align-items: flex-start;
                     padding: 13px;
+                    padding-left: 0px;
+                    background-color: black;
                     .menu-icon {
                         background-image: url("../images/menu-icon.png");
                         background-repeat: no-repeat;
@@ -235,63 +240,97 @@ body {
                         height: 40px;
                         width: 40px;
                         margin-right: 13px;
+                        cursor: pointer;
                     }
 
-                    .logo{
-                    }
                     .links-wrapper {
+                        background-color: black;
+                        display: flex;
+                        flex-direction: column;
+                        height: 100%;
+                        margin-left: 0px;
+                        position: fixed;
+                        width: 50%;
+                        font-size: 0.8rem;
+                        margin-top: 50px;
                         display: none;
+
+                        &.visible {
+                            display: flex;
+                        }
+
+                        .link {
+                            line-height: 25px;
+                            margin-left: 5px;
+                            margin-bottom: 20px;
+                        }
                     }
                 }
             }
 
-            .middle-content{
+            .middle-content {
                 padding: 0;
                 margin: 0;
-                .middle-content-wrapper{
+                .middle-content-wrapper {
                     width: 227px;
                     height: 100px;
                     display: flex;
                     flex-direction: column;
                     padding-left: 13px;
-                    .courflix-title{
+                    
+                    .courflix-title {
                         display: none;
                     }
 
-                    .title-wrapper{
-                        .content-title{
+                    .title-wrapper {
+                        line-height: 0px;
+                        margin-bottom: 0px;
+
+                        .content-title {
                             font-size: 1rem;
+                            letter-spacing: 2px;
+                            margin-bottom: 30px;
+                        }
+
+                        .title-info {
+                            font-size: 0.7rem;
+                            display: block;
                         }
                     }
 
-                    .links-container{
+                    .links-container {
                         display: flex;
                         margin-top: 30px;
-                        .button{
-                        padding: 7px 15px;
-                        font-size: 0.7rem;
-                        border-radius: 3px;
+                        .button {
+                            padding: 7px 15px;
+                            font-size: 0.7rem;
+                            border-radius: 3px;
 
-                        &:first-child{
-                            background-color: #ED0A1D;
-
-                        }
+                            &:first-child {
+                                background-color: #ed0a1d;
+                            }
                         }
                     }
 
                     .description-wrapper {
                         .watch {
-                           display:none;
+                            display: none;
                         }
                         .description {
                             display: none;
                         }
                     }
                 }
-
             }
             .wrap-content {
                 margin: 0 13px;
+
+                .series-wrapper {
+                    .wrap-title {
+                        font-size: 0.8rem;
+                        margin-top: 15px;
+                    }
+                }
             }
         }
     }

@@ -1,0 +1,559 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: black;
+}
+
+body .series-content-wrapper {
+  font-family: "Open Sans", sans-serif;
+  background-image: url("https://cdn.forbes.com.mx/2019/02/brk.jpg");
+  min-width: 100%;
+  max-height: 843px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-position: right;
+  background-color: rgba(0, 0, 0, 0.274);
+}
+
+body .series-content-wrapper .header .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.801218);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  width: 100vw;
+  padding: 13px;
+  padding-left: 70px;
+}
+
+body .series-content-wrapper .header .nav .menu-icon {
+  display: hidden;
+}
+
+body .series-content-wrapper .header .nav .logo {
+  background-image: url("../images/Logo.png");
+  min-width: 148.69px;
+  min-height: 40px;
+  background-position: center;
+  background-size: cover;
+}
+
+body .series-content-wrapper .header .nav .links-wrapper {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+  max-width: 100%;
+}
+
+body .series-content-wrapper .header .nav .links-wrapper .link {
+  text-decoration: none;
+  color: #ffffff;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+body .series-content-wrapper .middle-content .middle-content-wrapper {
+  color: white;
+  text-shadow: 0px 0px 0px black;
+  max-width: 530px;
+  padding-left: 70px;
+}
+
+body .series-content-wrapper .middle-content .middle-content-wrapper .title-info {
+  display: none;
+}
+
+body .series-content-wrapper .middle-content .middle-content-wrapper .title-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+body .series-content-wrapper .middle-content .middle-content-wrapper .title-wrapper .logo-container .serie-logo {
+  background-image: url("../images/logo-breaking-bad.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 300px;
+  height: 250px;
+  margin-top: 50px;
+}
+
+body .series-content-wrapper .middle-content .middle-content-wrapper .title-wrapper .info-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .series-content-wrapper .middle-content .middle-content-wrapper .title-wrapper .info-container .title {
+  display: none;
+}
+
+body .series-content-wrapper .middle-content .middle-content-wrapper .title-wrapper .info-container .info:nth-child(3) {
+  margin-left: 15px;
+}
+
+body .series-content-wrapper .middle-content .middle-content-wrapper .title-wrapper .info-container .info:nth-child(4) {
+  margin-left: 15px;
+}
+
+body .series-content-wrapper .middle-content .middle-content-wrapper .title-wrapper .info-container .info:nth-child(5) {
+  margin-left: 15px;
+}
+
+body .series-content-wrapper .middle-content .middle-content-wrapper .title-wrapper .info-container .coincidence {
+  color: #009c04;
+}
+
+body .series-content-wrapper .middle-content .middle-content-wrapper .title-wrapper .info-container .age-restriction {
+  border: 1px solid #979797;
+  border-radius: 8px;
+  padding: 5px 10px;
+}
+
+body .series-content-wrapper .middle-content .middle-content-wrapper .title-wrapper .info-container .title-info {
+  display: none;
+}
+
+body .series-content-wrapper .middle-content .middle-content-wrapper .links-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .series-content-wrapper .middle-content .middle-content-wrapper .links-container .button {
+  text-decoration: none;
+  color: white;
+  background: rgba(157, 151, 151, 0.541521);
+  border-radius: 9px;
+  padding: 14px 40px;
+  font-size: 0.8rem;
+}
+
+body .series-content-wrapper .middle-content .middle-content-wrapper .links-container .button:first-child {
+  background-color: #ed0a1d;
+}
+
+body .series-content-wrapper .middle-content .middle-content-wrapper .links-container .button:nth-child(2) {
+  margin-left: 10px;
+}
+
+body .series-content-wrapper .middle-content .middle-content-wrapper .links-container .button:nth-child(2):hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  background-color: rgba(112, 110, 110, 0.692);
+}
+
+body .series-content-wrapper .middle-content .middle-content-wrapper .links-container .like-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+body .series-content-wrapper .middle-content .middle-content-wrapper .links-container .like-links .circle {
+  background-image: url("../images/Oval.png");
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-right: 5px;
+  margin-left: 10px;
+}
+
+body .series-content-wrapper .middle-content .middle-content-wrapper .links-container .like-links .hand-like {
+  background-image: url("../images/hand-up.png");
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  right: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  cursor: pointer;
+}
+
+body .series-content-wrapper .middle-content .middle-content-wrapper .links-container .like-links .hand-dislike {
+  background-image: url("../images/hand-down.png");
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  left: 88%;
+  -webkit-transform: translate(-100%);
+          transform: translate(-100%);
+  cursor: pointer;
+}
+
+body .series-content-wrapper .middle-content .middle-content-wrapper .description-wrapper {
+  margin-top: 10px;
+}
+
+body .series-content-wrapper .middle-content .middle-content-wrapper .description-wrapper .description {
+  font-weight: lighter;
+  font-size: 0.9rem;
+}
+
+body .wrap-content {
+  max-width: 100%;
+  margin: 0px 70px;
+  margin-top: 50px;
+}
+
+body .wrap-content .chapters-container .season {
+  text-decoration: none;
+  color: white;
+}
+
+body .wrap-content .chapters-container .series-links {
+  overflow-x: auto;
+  min-width: 100%;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+
+body .wrap-content .chapters-container .series-links::-webkit-scrollbar {
+  width: 5px;
+  height: 8px;
+}
+
+body .wrap-content .chapters-container .series-links::-webkit-scrollbar-thumb {
+  background: rgba(128, 128, 128, 0.171);
+}
+
+body .wrap-content .chapters-container .series-links::-webkit-scrollbar-track {
+  background: black;
+}
+
+body .wrap-content .chapters-container .series-links .serie-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 16px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+}
+
+body .wrap-content .chapters-container .series-links .serie-content .serie-img {
+  margin-top: 5px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  background-image: url("../images/chapter-1-BB.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 341px;
+  height: 192px;
+}
+
+body .wrap-content .chapters-container .series-links .serie-content .chapter-title {
+  font-size: 0.9rem;
+  line-height: 10px;
+}
+
+body .wrap-content .chapters-container .series-links .serie-content .chapter-description {
+  font-size: 0.7rem;
+  margin-top: 0px;
+  width: 80%;
+}
+
+body .wrap-content .chapters-container .series-links .serie-content .chapter-2 {
+  margin-top: 5px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  background-image: url("../images/chapter-2-BB.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 341px;
+  height: 192px;
+}
+
+body .wrap-content .chapters-container .series-links .serie-content .chapter-3 {
+  margin-top: 5px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  background-image: url("../images/chapter-3-BB.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 341px;
+  height: 192px;
+}
+
+body .wrap-content .chapters-container .series-links .serie-content .chapter-4 {
+  margin-top: 5px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  background-image: url("../images/chapter-4-BB.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 341px;
+  height: 192px;
+}
+
+body .wrap-content .series-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .wrap-content .series-wrapper .wrap-title {
+  text-decoration: none;
+  color: white;
+  margin-top: 15px;
+  margin: 5px;
+}
+
+body .wrap-content .series-wrapper .movies-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: auto;
+  min-width: 100%;
+  text-decoration: none;
+}
+
+body .wrap-content .series-wrapper .movies-links::-webkit-scrollbar {
+  width: 5px;
+  height: 8px;
+}
+
+body .wrap-content .series-wrapper .movies-links::-webkit-scrollbar-thumb {
+  background: rgba(128, 128, 128, 0.171);
+}
+
+body .wrap-content .series-wrapper .movies-links::-webkit-scrollbar-track {
+  background: black;
+}
+
+body .wrap-content .series-wrapper .movies-links .movies {
+  background-image: url("../images/series/series-1.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-width: 341px;
+  min-height: 192px;
+  margin-right: 16px;
+}
+
+body .wrap-content .series-wrapper .movies-links .movies:nth-child(2) {
+  background-image: url("../images/series/series-2.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body .wrap-content .series-wrapper .movies-links .movies:nth-child(3) {
+  background-image: url("../images/series/series-3.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body .wrap-content .series-wrapper .movies-links .movies:nth-child(4) {
+  background-image: url("../images/series/series-4.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body .wrap-content .series-wrapper .movies-links .movies:nth-child(5) {
+  background-image: url("../images/series/series-5.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body .wrap-content .series-wrapper .movies-links .movies:nth-child(6) {
+  background-image: url("../images/series/series-6.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body .wrap-content .series-wrapper .movies-links .movies:nth-child(7) {
+  background-image: url("../images/series/series-7.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 500px) {
+  body .series-content-wrapper {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("https://cdn.forbes.com.mx/2019/02/brk.jpg");
+    width: 227px;
+    height: 344px;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.274);
+  }
+  body .series-content-wrapper .header .nav {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 13px;
+    padding-left: 0px;
+    background-color: black;
+  }
+  body .series-content-wrapper .header .nav .menu-icon {
+    background-image: url("../images/menu-icon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 40px;
+    width: 40px;
+    margin-right: 13px;
+    cursor: pointer;
+  }
+  body .series-content-wrapper .header .nav .links-wrapper {
+    background-color: black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+    margin-left: 0px;
+    position: fixed;
+    width: 50%;
+    font-size: 0.8rem;
+    margin-top: 50px;
+    display: none;
+  }
+  body .series-content-wrapper .header .nav .links-wrapper.visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body .series-content-wrapper .header .nav .links-wrapper .link {
+    line-height: 25px;
+    margin-left: 5px;
+    margin-bottom: 20px;
+  }
+  body .series-content-wrapper .middle-content {
+    padding: 0;
+    margin: 0;
+  }
+  body .series-content-wrapper .middle-content .middle-content-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 13px;
+  }
+  body .series-content-wrapper .middle-content .middle-content-wrapper .title-info {
+    font-size: 0.6rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 10px;
+  }
+  body .series-content-wrapper .middle-content .middle-content-wrapper .title-wrapper {
+    margin-top: 180px;
+    margin-bottom: 0px;
+  }
+  body .series-content-wrapper .middle-content .middle-content-wrapper .title-wrapper .logo-container .serie-logo {
+    display: none;
+  }
+  body .series-content-wrapper .middle-content .middle-content-wrapper .title-wrapper .info-container .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 1rem;
+  }
+  body .series-content-wrapper .middle-content .middle-content-wrapper .title-wrapper .info-container .year {
+    display: none;
+  }
+  body .series-content-wrapper .middle-content .middle-content-wrapper .title-wrapper .info-container .coincidence {
+    display: none;
+  }
+  body .series-content-wrapper .middle-content .middle-content-wrapper .title-wrapper .info-container .age-restriction {
+    display: none;
+  }
+  body .series-content-wrapper .middle-content .middle-content-wrapper .title-wrapper .info-container .season-number {
+    display: none;
+  }
+  body .series-content-wrapper .middle-content .middle-content-wrapper .links-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body .series-content-wrapper .middle-content .middle-content-wrapper .links-container .button {
+    padding: 7px 15px;
+    font-size: 0.7rem;
+    border-radius: 3px;
+  }
+  body .series-content-wrapper .middle-content .middle-content-wrapper .links-container .button:first-child {
+    background-color: #ed0a1d;
+  }
+  body .series-content-wrapper .middle-content .middle-content-wrapper .links-container .like-links {
+    display: none;
+  }
+  body .series-content-wrapper .middle-content .middle-content-wrapper .description-wrapper .watch {
+    display: none;
+  }
+  body .series-content-wrapper .middle-content .middle-content-wrapper .description-wrapper .description {
+    display: none;
+  }
+  body .series-content-wrapper .wrap-content {
+    margin: 0 13px;
+    margin-top: 30px;
+  }
+  body .series-content-wrapper .wrap-content .series-wrapper .wrap-title {
+    font-size: 0.8rem;
+  }
+}
+/*# sourceMappingURL=series.css.map */
