@@ -213,9 +213,9 @@ body {
                 .serie-content {
                     display: flex;
                     margin-right: 16px;
-
                     flex-direction: column;
                     color: white;
+                    background-blend-mode: multiply;
                     .serie-img {
                         margin-top: 5px;
                         text-decoration: none;
@@ -226,6 +226,12 @@ body {
                         background-repeat: no-repeat;
                         width: 341px;
                         height: 192px;
+                        background-blend-mode: multiply;
+
+                        &:hover{
+                            background-color: rgba(0, 0, 0, 0.534);
+                        }
+
                     }
                     .chapter-title {
                         font-size: 0.9rem;

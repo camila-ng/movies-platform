@@ -265,6 +265,7 @@ body .wrap-content .chapters-container .series-links .serie-content {
       -ms-flex-direction: column;
           flex-direction: column;
   color: white;
+  background-blend-mode: multiply;
 }
 
 body .wrap-content .chapters-container .series-links .serie-content .serie-img {
@@ -277,6 +278,11 @@ body .wrap-content .chapters-container .series-links .serie-content .serie-img {
   background-repeat: no-repeat;
   width: 341px;
   height: 192px;
+  background-blend-mode: multiply;
+}
+
+body .wrap-content .chapters-container .series-links .serie-content .serie-img:hover {
+  background-color: rgba(0, 0, 0, 0.534);
 }
 
 body .wrap-content .chapters-container .series-links .serie-content .chapter-title {
