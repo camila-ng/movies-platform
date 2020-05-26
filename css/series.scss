@@ -493,6 +493,26 @@ body {
                 margin: 0 13px;
                 margin-top: 30px;
 
+                
+        .chapters-container {
+            .season {
+                text-decoration: none;
+                color: white;
+            }
+            .series-links {
+                display: flex;
+                flex-direction: column;
+                cursor: pointer;
+              
+                .serie-content {
+                    display: flex;
+                    margin-right: 16px;
+                    flex-direction: column;
+                    color: white;
+                }
+            }
+        }
+
                 .series-wrapper {
                     .wrap-title {
                         font-size: 0.8rem;
