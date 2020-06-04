@@ -126,31 +126,20 @@ body {
             }
             .movies-links {
                 display: flex;
-                // overflow-x: auto;
                 min-width: 100%;
                 text-decoration: none;
 
-                // &::-webkit-scrollbar {
-                //     width: 5px;
-                //     height: 8px;
-                // }
-                // &::-webkit-scrollbar-thumb {
-                //     background: rgba(128, 128, 128, 0.171);
-                // }
-
-                // &::-webkit-scrollbar-track {
-                //     background: rgb(0, 0, 0);
-                // }
-                .movies {
+        
+            .img1{
                     background-image: url("../images/series/series-1.png");
                     background-position: center;
                     background-size: cover;
                     background-repeat: no-repeat;
-                    min-width: 341px;
-                    min-height: 192px;
+                    width: 341px;
+                    height: 192px;
                     margin-right: 16px;
-
-                    &:nth-child(2) {
+                    }
+                    .img2 {
                         background-image: url("../images/series/series-2.png");
                         background-position: center;
                         background-size: cover;
@@ -160,7 +149,7 @@ body {
                         margin-right: 16px;
                     }
 
-                    &:nth-child(3) {
+                    .img3 {
                         background-image: url("../images/breaking-bad-image.jpg");
                         background-position: center;
                         background-size: cover;
@@ -170,7 +159,7 @@ body {
                         margin-right: 16px;
                     }
 
-                    &:nth-child(4) {
+                    .img4 {
                         background-image: url("../images/series/series-4.png");
                         background-position: center;
                         background-size: cover;
@@ -180,7 +169,7 @@ body {
                         margin-right: 16px;
                     }
 
-                    &:nth-child(5) {
+                    .img5 {
                         background-image: url("../images/series/series-5.png");
                         background-position: center;
                         background-size: cover;
@@ -190,7 +179,7 @@ body {
                         margin-right: 16px;
                     }
 
-                    &:nth-child(6) {
+                    .img6 {
                         background-image: url("../images/series/series-6.png");
                         background-position: center;
                         background-size: cover;
@@ -200,20 +189,20 @@ body {
                         margin-right: 16px;
                     }
 
-                    &:nth-child(7) {
-                        background-image: url("../images/series/series-7.png");
-                        background-position: center;
-                        background-size: cover;
-                        background-repeat: no-repeat;
-                        min-width: 341px;
-                        min-height: 192px;
-                        margin-right: 16px;
-                    }
+                    // .img7 {
+                    //     background-image: url("../images/series/series-7.png");
+                    //     background-position: center;
+                    //     background-size: cover;
+                    //     background-repeat: no-repeat;
+                    //     min-width: 341px;
+                    //     min-height: 192px;
+                    //     margin-right: 16px;
+                    // }
                 }
             }
         }
     }
-}
+
 
 @media only screen and (max-width: 500px) {
     body {
