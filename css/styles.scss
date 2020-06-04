@@ -126,21 +126,21 @@ body {
             }
             .movies-links {
                 display: flex;
-                overflow-x: auto;
+                // overflow-x: auto;
                 min-width: 100%;
                 text-decoration: none;
 
-                &::-webkit-scrollbar {
-                    width: 5px;
-                    height: 8px;
-                }
-                &::-webkit-scrollbar-thumb {
-                    background: rgba(128, 128, 128, 0.171);
-                }
+                // &::-webkit-scrollbar {
+                //     width: 5px;
+                //     height: 8px;
+                // }
+                // &::-webkit-scrollbar-thumb {
+                //     background: rgba(128, 128, 128, 0.171);
+                // }
 
-                &::-webkit-scrollbar-track {
-                    background: rgb(0, 0, 0);
-                }
+                // &::-webkit-scrollbar-track {
+                //     background: rgb(0, 0, 0);
+                // }
                 .movies {
                     background-image: url("../images/series/series-1.png");
                     background-position: center;

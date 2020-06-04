@@ -155,22 +155,8 @@ body .wrap-content .series-wrapper .movies-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  overflow-x: auto;
   min-width: 100%;
   text-decoration: none;
-}
-
-body .wrap-content .series-wrapper .movies-links::-webkit-scrollbar {
-  width: 5px;
-  height: 8px;
-}
-
-body .wrap-content .series-wrapper .movies-links::-webkit-scrollbar-thumb {
-  background: rgba(128, 128, 128, 0.171);
-}
-
-body .wrap-content .series-wrapper .movies-links::-webkit-scrollbar-track {
-  background: black;
 }
 
 body .wrap-content .series-wrapper .movies-links .movies {

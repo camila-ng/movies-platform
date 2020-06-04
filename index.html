@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
     <title>Courflix</title>
 </head>
 
@@ -17,10 +19,10 @@
                 <div class="logo"></div>
 
                 <div class="links-wrapper">
-                    <a class="link" href="#" alt="inicio">Inicio</a>
-                    <a class="link" href="#" alt="series">Series</a>
+                    <a class="link" href="index.html" alt="inicio">Inicio</a>
+                    <a class="link" href="#series" alt="series">Series</a>
                     <a class="link" href="#" alt="peliculas">Películas</a>
-                    <a class="link" href="#" alt="agregados-recientemente">Agregados recientemente</a>
+                    <a class="link" href="#recent-movies" alt="agregados-recientemente">Agregados recientemente</a>
                     <a class="link" href="#" alt="mi-lista">Mi lista</a>
                 </div>
             </nav>
@@ -48,22 +50,20 @@
                 </div>
             </div>
             <div class="wrap-content">
-                <div class="series-wrapper">
-                    <a class="wrap-title" href="#" alt="">Series</a>
-                    <div class="movies-links">
-                        <a class="movies" href="#" alt="movie"></a>
-                        <a class="movies" href="#" alt="movie"></a>
-                        <a class="movies" href="./series.html" alt="movie"></a>
-                        <a class="movies" href="#" alt="movie"></a>
-                        <a class="movies" href="#" alt="movie"></a>
-                        <a class="movies" href="#" alt="movie"></a>
-                        <a class="movies" href="#" alt="movie"></a>
+                <div class="series-wrapper " id="series">
+                    <a class="wrap-title " href="#" alt="">Series</a>
+                    <div class="movies-links multiple-items">
+                        <div class="movies"></div>
+                        <div class="movies"></div>
+                        <div class="movies"></div>
+                        <div class="movies"></div>
+                        <div class="movies"></div>
+                        <div class="movies"></div>
                     </div>
                 </div>
-
-                <div class="series-wrapper">
+                <div class="series-wrapper" id="more-content">
                     <a class="wrap-title" href="#" alt="">Seguir viendo contenido de Camito</a>
-                    <div class="movies-links">
+                    <div class="movies-links multiple-items ">
                         <a class="movies" href="#" alt="movie"></a>
                         <a class="movies" href="#" alt="movie"></a>
                         <a class="movies" href="#" alt="movie"></a>
@@ -74,9 +74,9 @@
                     </div>
                 </div>
 
-                <div class="series-wrapper">
+                <div class="series-wrapper "id="recent-movies" >
                     <a class="wrap-title" href="#" alt="">Agregados recientemente</a>
-                    <div class="movies-links">
+                    <div class="movies-links multiple-items">
                         <a class="movies" href="#" alt="movie"></a>
                         <a class="movies" href="#" alt="movie"></a>
                         <a class="movies" href="#" alt="movie"></a>
@@ -88,6 +88,9 @@
                 </div>
             </div>
         </div>
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
         <script src="./js/index.js"></script>
 </body>
 
